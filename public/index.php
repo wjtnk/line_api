@@ -69,7 +69,7 @@ $di->set(
                 'host'     => '192.168.10.31',
                 'username' => 'testuser',
                 'password' => 'testpasswd',
-                'dbname'   => 'testdb1',
+                'dbname'   => 'testdb',
             ]
         );
     }
