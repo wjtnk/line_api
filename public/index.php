@@ -66,10 +66,10 @@ $di->set(
     function () {
         return new DbAdapter(
             [
-                'host'     => '192.168.10.10',
-                'username' => 'root',
-                'password' => '',
-                'dbname'   => 'tutorial1',
+                'host'     => '192.168.10.31',
+                'username' => 'testuser',
+                'password' => 'testpasswd',
+                'dbname'   => 'testdb1',
             ]
         );
     }
