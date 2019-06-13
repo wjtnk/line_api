@@ -6,15 +6,10 @@ use Phalcon\Paginator\Adapter\Model as Paginator;
 
 class PostController extends Controller
 {
-
-
-
     public function indexAction()
     {
       //一覧表示
       $this->view->posts = Posts::find();
-
-
     }
 
     public function searchAction()
@@ -78,7 +73,7 @@ class PostController extends Controller
                 echo $message->getMessage(), "<br/>";
             }
         }
-        $this->view->disable();
+        $this->response->redirect("/post");
     }
 
     #hogeAction($パラメータ)でurlにあるパラメータの値を取得

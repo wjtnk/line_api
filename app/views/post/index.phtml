@@ -14,8 +14,16 @@
             <input type='text' id='message' name='message' />
         </div>
 
+        <p></p>
+
         <div class='control-group'>
             <input type='submit' value='Search' class='btn btn-primary' />
+        </div>
+
+        <p></p>
+
+        <div class='control-group'>
+            <a href="/post/new" class='btn btn-success'>メッセージ新規登録</a>
         </div>
 
     <!-- </fieldset> -->
@@ -36,7 +44,7 @@ if ($posts->count() >= 0) {
         </thead>
         <tfoot>
         <tr>
-            <td colspan="3">Posts quantity: <?php echo $posts->count(); ?></td>
+            <td colspan="3">メッセージの数: <?php echo $posts->count(); ?></td>
         </tr>
         </tfoot>
         <tbody>
